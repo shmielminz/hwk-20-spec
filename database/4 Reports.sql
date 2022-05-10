@@ -7,7 +7,7 @@ go
    For this I need to see the customers phone number, last name and the amount of money they will have to pay.
    Please do it in this format:  last name, first name (phone number) - price of service.
 */
-select DeepCleanService = concat(s.CustomerLastName, ' ', s.CustomerFirstName, ' (', s.PhoneNum, ') - ', convert(decimal(4,1),s.PriceDeepClean))
+select DeepCleanService = concat(s.CustomerLastName, ', ', s.CustomerFirstName, ' (', s.PhoneNum, ') - ', convert(decimal(4,1),s.PriceDeepClean))
 from SpruceUp s
 /*
 2) I would like to know how many months I have been working for each current customer. 
